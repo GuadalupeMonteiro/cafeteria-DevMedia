@@ -15,6 +15,7 @@ Created to practice the css position and parallax properties. The source of the 
 - Javascript
 
 ## deploy
+https://guadalupemonteiro.github.io/cafeteria-DevMedia
 
 ## Sugestões / suggestions
 Sinta-se livre para adicionar qualquer sugestão! 
