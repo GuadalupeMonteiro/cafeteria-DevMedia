@@ -1,0 +1,22 @@
+:root {
+    --font-brown: #c4a47c;
+    --font-white: #fff;
+    --bg-black: #000000;
+    --bg-brown: rgb(96, 72, 41);
+    --text: #666;
+    --table: #acacac;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-family: 'Lato', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}

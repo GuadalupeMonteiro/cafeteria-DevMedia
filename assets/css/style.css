@@ -1,0 +1,377 @@
+header {
+    width: 100vw;
+    height: 100vh;
+}
+
+.parallax1 {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/parallax-imagem1.png) no-repeat #fffff3;
+}
+
+#nav {
+    width: 100%;
+    padding: 0 15%;
+    background-color: rgba(96, 72, 41, 0.6);
+    backdrop-filter: blur(20px);
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+#nav img {
+    width: 8rem;
+}
+
+#btn-nav {
+    display: none;
+}
+
+#nav ul {
+    display: flex;
+    align-items: center;
+}
+
+#nav ul li {
+    position: relative;
+}
+
+#nav ul li::after {
+    content: "";
+    width: 0;
+    height: 1px;
+    padding: 0;
+    background-color: #fffff3;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all .3s ease;
+}
+
+#nav ul li:hover::after,
+#nav ul li:active::after {
+    width: 80%;
+}
+
+#nav ul li a {
+    padding: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--font-white);
+}
+
+header h1 {
+    width: 100%;
+    font-size: 10vmin;
+    color: var(--font-white);
+    font-weight: 500;
+    font-family: 'Fraunces', serif;
+    text-align: center;
+    position: absolute;
+    top: 45%;
+}
+
+section.text-container {
+    width: 100%;
+    padding: 80px 2.4rem;
+    background-color: #fffff3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.text-container .title {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: var(--font-brown);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+}
+
+section p.text {
+    width: 85%;
+    color: var(--bg-brown);
+    text-align: justify;
+    line-height: 3rem;
+}
+
+.img-wrapper {
+    position: relative;
+}
+
+.parallax2 {
+    height: 50vh;
+    background: url(../img/parallax-imagem2.jpg) no-repeat #fffff3;
+}
+
+h2.img-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h2.img-title,
+.contact-container h2 {
+    max-width: 500px;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    color: var(--font-white);
+    font-family: 'Fraunces', serif;
+    background-color: var(--bg-brown);
+    top: 45%;
+}
+
+.parallax3 {
+    height: 50vh;
+    background: url(../img/parallax-imagem3.jpg) no-repeat #fffff3;
+}
+
+.parallax4 {
+    height: 130vh;
+    background: url(../img/parallax-imagem4.png) no-repeat #fffff3;
+}
+
+.opening-hours {
+    height: 85vh;
+    background: url(../img/cafeteria.jpg) no-repeat #fffff3;
+}
+
+.parallax1,
+.parallax2,
+.parallax3,
+.parallax4,
+.opening-hours {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container iframe {
+    width: 80%;
+    margin: 4rem auto 5rem;
+}
+
+.contact-text {
+    max-width: 50rem;
+    padding: 1rem;
+    color: var(--font-white);
+    background-color: var(--bg-brown);
+}
+
+.contact-container h2,
+.contact-text {
+    margin: 2rem auto;
+}
+
+.opening-hours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1.5rem;
+}
+
+section.opening-hours h2 {
+    margin: 7rem auto 6rem;
+    font-size: 2.2rem;
+    font-weight: 600;
+    letter-spacing: .5rem;
+}
+
+.list {
+    width: 100%;
+    max-width: 768px;
+}
+
+.list li {
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list li h3 {
+    flex: 0 1 80px;
+}
+
+.list li div {
+    height: 1px;
+    background-color: var(--table);
+    flex: 1 1 auto;
+}
+
+#closed {
+    color: var(--font-brown);
+}
+
+ul.list li p,
+ul.list li time {
+    color: var(--table);
+    text-align: right;
+    flex: 0 1 100px;
+}
+
+.opening-hours h2,
+.list li h3,
+.list li p,
+.list li time {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--font-white);
+    text-transform: uppercase;
+}
+
+.contact-text p,
+.contact-text p a,
+.opening-hours h2 {
+    font-weight: 500;
+    text-align: center;
+    line-height: 3rem;
+    color: var(--font-white);
+}
+
+header nav ul li a,
+section.text-container .title,
+.contact-container h2,
+.contact-container address,
+.contact-text p,
+.contact-text p a,
+.opening-hours h2,
+.list li h3,
+.list li p,
+.list li time {
+    font-style: normal;
+    font-family: 'Oswald', sans-serif;
+}
+
+footer {
+    padding: 2rem;
+    background-color: var(--bg-black);
+    position: relative;
+}
+
+footer a img {
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    bottom: 8.5rem;
+    right: 5rem;
+}
+
+footer p {
+    margin: 1rem auto;
+    text-align: center;
+    font-weight: 600;
+    color: var(--font-white);
+    letter-spacing: 2.3px;
+}
+
+footer p span {
+    margin-right: .5rem;
+}
+
+footer p a {
+    margin-left: .5rem;
+    font-weight: 600;
+    color: var(--font-white);
+    letter-spacing: 2.3px;
+    transition: all .5s ease;
+}
+
+footer p a:hover {
+    color: var(--font-brown);
+}
+
+@media (max-width: 850px) {
+    section.opening-hours h2 {
+        margin: 7rem auto 4rem;
+    }
+
+    footer a img {
+        width: 4.5rem;
+        height: 4.5rem;
+        top: -2rem;
+        right: 0;
+    }
+}
+
+@media (max-width: 660px) {
+    #btn-nav {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        display: block;
+    }
+
+    #btn-nav span {
+        width: 26px;
+        height: 4px;
+        margin-top: .5rem;
+        border-radius: 1px;
+        background-color: #fffff3;
+        display: block;
+        transition: .4s ease;
+    }
+
+    #nav.active #btn-nav span:nth-child(1) {
+        transform: rotate(135deg);
+    }
+
+    #nav.active #btn-nav span:nth-child(2) {
+        display: none;
+    }
+
+    #nav.active #btn-nav span:nth-child(3) {
+        transform: rotate(-135deg);
+        position: absolute;
+        top: -.5px;
+    }
+
+    #menu-list {
+        width: 100%;
+        height: 0;
+        background-color: rgba(96, 72, 41, 0.85);
+        backdrop-filter: blur(60px);
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        transition: .4s ease;
+    }
+
+    #nav.active #menu-list {
+        height: 100vh;
+        text-align: center;
+        opacity: 1;
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #menu-list li {
+        margin-top: 1.4rem;
+        opacity: 0;
+    }
+
+    #nav.active #menu-list li {
+        opacity: 1;
+    }
+}
